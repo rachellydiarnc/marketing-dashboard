@@ -685,13 +685,447 @@ main{padding:28px 52px 80px;max-width:1380px;}
 </div>
 </section>
 <!-- ⑦ 주간 운영 리포트 -->
-<section class="sec active" id="weekly">
-<div class="sec-head">
+<section class="sec active" id="weekly"><div class="sec-head">
 <h2>주간 운영 리포트</h2>
 <p>매주 금요일 기준 · 브랜드검색/네이버 쇼핑검색/네이버 파워링크/AD부스트/메타</p>
+</div><div style="border:2px solid var(--n800);border-radius:14px;margin-bottom:16px;overflow:hidden;">
+<div onclick="toggleWeek('m6')" style="background:linear-gradient(135deg,var(--n950) 0%,var(--n900) 100%);padding:18px 24px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;">
+<div style="display:flex;align-items:center;gap:14px;">
+<span id="m6-icon" style="color:#7DD3FC;font-size:14px;">▼</span>
+<div>
+<div style="font-size:16px;font-weight:800;color:#F0F6FF;">2026년 6월</div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--n200);margin-top:2px;">6/1 ~ 6/31</div>
 </div>
-<!-- 월별 아코디언: 4월 -->
-<div style="border:2px solid var(--n800);border-radius:14px;margin-bottom:16px;overflow:hidden;">
+</div>
+<div style="display:flex;gap:6px;">
+<span class="badge bg" id="m6-roas">ROAS -</span>
+<span class="badge bb" id="m6-cost">광고비 -</span>
+<span class="badge bg" id="m6-conv">전환 -</span>
+</div>
+</div>
+<div id="m6" style="background:var(--n900);padding:14px;"><div style="border:1px solid var(--bd);border-radius:12px;margin-bottom:12px;overflow:hidden;">
+<div onclick="toggleWeek('w202624')" style="background:var(--n900);padding:16px 20px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;">
+<div style="display:flex;align-items:center;gap:12px;">
+<span id="w202624-icon" style="color:var(--n200);font-size:12px;">▼</span>
+<span style="font-size:14px;font-weight:800;color:#F0F6FF;">06/08(월)~06/14(일)</span>
+</div>
+<div style="display:flex;gap:8px;">
+<span class="badge bg" id="w202624-roas">ROAS 519%</span>
+<span class="badge bb" id="w202624-cost">광고비 704만</span>
+<span class="badge bg" id="w202624-conv">전환 332건</span>
+</div>
+</div>
+<div id="w202624" style="padding:16px;background:var(--bg);"><div class="panel" id="auto-daily-20260608" style="border-left:4px solid #4A80B8;margin-bottom:16px;">
+<div class="panel-title" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">
+<span style="font-size:14px;font-weight:700;">📋 06/08(월) 데일리</span>
+<span style="font-size:11px;color:var(--tx3);">광고비 ₩6,814,995 · 매출 ₩27,362,797 · 전환 253건</span>
+</div>
+<div style="overflow-x:auto;margin-bottom:12px;margin-top:10px;">
+<table style="width:100%;border-collapse:collapse;min-width:500px;">
+<thead><tr style="background:#F1F5F9;border-bottom:1.5px solid #CBD5E1;">
+<th style="padding:7px 10px;text-align:left;color:#374151;font-size:11px;font-weight:600;">매체</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">ROAS</th>
+<th style="padding:7px 10px;text-align:center;color:#374151;font-size:11px;font-weight:600;">전주</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">광고비</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">매출</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">CPA</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">CVR</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">객단가</th>
+</tr></thead>
+<tbody style="background:#FFFFFF;"><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">브랜드검색</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">3281%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩252,999</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩8,299,900</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩3,953</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">9.07%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩129,686</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">쇼핑검색</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;"></td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,977,979</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩6,891,810</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩35,452</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">3.90%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩82,045</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">파워링크</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;">255%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩942,387</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,402,000</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩58,899</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">2.43%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩150,125</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">ADVoost</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#D97706;font-size:12px;">316%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩316,161</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩999,870</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩26,347</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">4.10%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩83,323</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">메타</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#D97706;font-size:12px;">389%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,252,764</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩8,769,217</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩29,257</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">2.10%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩113,886</td>
+</tr></tbody>
+</table></div>
+<div style="display:flex;flex-direction:column;gap:8px;">
+<div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#166534;margin-bottom:5px;">성과</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">317만원, ROAS 207%) 대비 구매 +8%, 매출 +5%, ROAS +25%p 개선 + 비용 -6% 절감</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">냉감_에어쿨(25~54세) 그룹 내 '260602_에어쿨_영상' 소재 광고세트 내 소진 비용 대비 ROAS 효율 저조하여</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">ROAS 308% vs 비냉감 4개 ROAS 591%로 효율 격차 약 2배</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">토퍼/패드 + 프로모션_통합 등 고효율 광고세트로 일부 재배분하면 캠페인 전체 ROAS 개선 효과 기대. 냉감 시즌 피크는</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">유지되고 있으나, *광고 내 냉감 경쟁 격화로 CPA가 상승*하고 있어 효율 기반의 예산 배분이 중요한 시점</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">베딩_토퍼/패드/스프레드 10만원 692% 13만원 +3만원 최고 효율, 전환 기회 확대</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">프로모션_통합 8만원 687% 10만원 +2만원 고효율 + 10건 볼륨 확보</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">신규_냉감_남성 13만원 382% 10만원 -3만원 CPC 최고(약 878원), 비용 대비 효율 하위</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">신규_냉감 12만원 252% 9만원 -3만원 ROAS 300% 미만, 전환 볼륨은 있으나 CPA 높음</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">냉감_에어쿨 12만원 259% 9만원 -3만원 ROAS 최저, CPC 약 807원으로 비용 부담</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">합계 72만원 - 72만원 ±0 총액 동일, 효율 기반 재배분</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">GDN 캠페인 신규 운영 6/8~</div>
+</div>
+<div style="background:#FFF7ED;border:1px solid #FED7AA;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#9A3412;margin-bottom:5px;">이슈</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">20% 감소. 공구 초기 효과 소멸에 따른 볼륨 정상화로 추측</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전반적으로 하락</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">주말간 매출액 볼륨 감소 추세 동일하게 보여졌던 결과</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">내 목의 베개 4만원 364% 7만원 +3만원 저비용 고효율 기저, 일예산 제한으로 노출 기회 손실 추정</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">베딩_이불 6만원 478% 7만원 +1만원 안정적 효율, 소폭 확대</div>
+</div>
+<div style="background:#EFF6FF;border:1px solid #BFDBFE;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#1E40AF;margin-bottom:5px;">다음 액션</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주(5/29~31: 74건/약 1,039만원) 대비 구매 -14%, 매출</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주(922/592/786회) 대비</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">일요일 구매 집중 패턴 유지 (전주 일: 35건/약 446만원 대비</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">MO 비중 87%, PC 건당 평균 약 10만원</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주(40,801회/774회/약 128만원) 대비 노출</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">유사, 비용 -27% 절감. 여름이불 그룹 축소 운영 효과 지속</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주(25건/약 243만원, 190%) 대비 건수 감소하나 ROAS</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">비용 절감이 효율 개선에 직접 기여</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주(78건/약 657만원/약</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주 대비 전반적으로 하락하나,</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">6월 단일일 쇼핑검색 최다 전환 기록</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주(30건/약 234만원, 36%) 대비</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">건당 약 19만원 고단가 전환 회복</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주(48건/약 422만원, 64%) 대비 비중 감소했으나 여전히 최대 카테고리</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">볼륨형 전환, 전주(12건/약 46만원) 대비 전환 건수 +50%</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">비냉감이 매출·ROAS 모두 우위. 냉감 광고세트의 효율이 구조적으로 하락하는</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주(4건/421%) 대비 전환 볼륨 회복</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">비냉감 제품 예산 축소보다 매출액 볼륨(객단가 영향)고려해 확대 검토 시점 → 냉감 4개</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">메타 일예산 재분배 제안</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">광고세트 현재 일예산 최근 3일 ROAS 권장 일예산 조정폭 의견</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">금~일 1천원대로 안정화</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">'냉감패드' 2건(약 44만원), '헬렌스타인구스이불' 1건(약 52만원), '헬렌스타인침구세트' 1건(약</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">냉감('냉감패드', '냉감이불세트', '침대쿨패드', '냉감베개커버'), 브랜드('헬렌스타인구스이불',</div>
+</div>
+</div>
+<div style="font-size:10px;color:var(--tx3);text-align:right;margin-top:6px;">2026-06-09 15:56</div>
+</div><div class="panel" id="auto-daily-20260609" style="border-left:4px solid #4A80B8;margin-bottom:16px;">
+<div class="panel-title" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">
+<span style="font-size:14px;font-weight:700;">📋 06/09(화) 데일리</span>
+<span style="font-size:11px;color:var(--tx3);">광고비 ₩233,235 · 매출 ₩9,220,475 · 전환 79건</span>
+</div>
+<div style="overflow-x:auto;margin-bottom:12px;margin-top:10px;">
+<table style="width:100%;border-collapse:collapse;min-width:500px;">
+<thead><tr style="background:#F1F5F9;border-bottom:1.5px solid #CBD5E1;">
+<th style="padding:7px 10px;text-align:left;color:#374151;font-size:11px;font-weight:600;">매체</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">ROAS</th>
+<th style="padding:7px 10px;text-align:center;color:#374151;font-size:11px;font-weight:600;">전주</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">광고비</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">매출</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">CPA</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">CVR</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">객단가</th>
+</tr></thead>
+<tbody style="background:#FFFFFF;"><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">브랜드검색</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">3760%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩84,333</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩3,170,800</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩4,217</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">7.72%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩158,540</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">쇼핑검색</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#D97706;font-size:12px;">327%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩864,524</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,825,300</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩36,022</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">3.89%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩117,721</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">파워링크</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;">290%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩369,538</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩1,073,500</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩41,060</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">0.40%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩119,278</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">ADVoost</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#D97706;font-size:12px;">407%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩101,900</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩414,560</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩20,380</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">5.21%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩82,912</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">메타</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;">192%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩853,853</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩1,640,315</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩44,940</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">2.53%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩86,332</td>
+</tr></tbody>
+</table></div>
+<div style="display:flex;flex-direction:column;gap:8px;">
+<div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#166534;margin-bottom:5px;">성과</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">PC 대비 MO 기기에서 높은 객단가 형성 (PC 10만원대 / MO 16만원)</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">+61%p 개선</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주 월(35건/약 287만원, 259%) 대비 ROAS +67%p 개선</div>
+</div>
+<div style="background:#FFF7ED;border:1px solid #FED7AA;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#9A3412;margin-bottom:5px;">이슈</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">증가하면서 비용은 -15% 감소. 전주 월(65,290회/739회/약 111만원) 대비 노출 +36%, 비용 -22% 절감</div>
+</div>
+<div style="background:#EFF6FF;border:1px solid #BFDBFE;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#1E40AF;margin-bottom:5px;">다음 액션</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주 월(655회) 대비 -18.5%. 500회대 전후가 6월 안정 구간으로 정착되는</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">MO 중심 구매 구조</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일 교체 전 소재 MO 매출액 180만원 / 교체 후 소재 MO 매출액 90만원으로 소재 교체에 따른 매출액 양상은 모니터링</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주 월(15,002회/267회/약 41만원) 대비 노출</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주 월(10건/약 94만원, 229%) 대비 매출 +14%, ROAS</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(70,641회/754회/약 101만원) 대비 노출 +25%</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(37건/약 344만원) 대비 건수 감소하나 ROAS는 개선,</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">이불베스트 1건(약 30만원), 베개 2건(약 20만원), 토퍼/패드 3건(약</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">노출 대비 불필요한 비용 소진이 줄어드는</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">PC/MO 각 구매 1건 발생, 일 소진 비용 5.8만원으로 소규모 운영이나 추후 전환 추이에 따라 확장 예정</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">노출 미발생하였고, 오늘부터 노출 발생하고 있는 것으로 확인 (초기 CTR 3.29%)</div>
+</div>
+</div>
+<div style="font-size:10px;color:var(--tx3);text-align:right;margin-top:6px;">2026-06-09 15:56</div>
+</div></div>
+</div><div style="border:1px solid var(--bd);border-radius:12px;margin-bottom:12px;overflow:hidden;">
+<div onclick="toggleWeek('w202623')" style="background:var(--n900);padding:16px 20px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;">
+<div style="display:flex;align-items:center;gap:12px;">
+<span id="w202623-icon" style="color:var(--n200);font-size:12px;">▼</span>
+<span style="font-size:14px;font-weight:800;color:#F0F6FF;">06/01(월)~06/07(일)</span>
+</div>
+<div style="display:flex;gap:8px;">
+<span class="badge bg" id="w202623-roas">ROAS 489%</span>
+<span class="badge bb" id="w202623-cost">광고비 743만</span>
+<span class="badge bg" id="w202623-conv">전환 314건</span>
+</div>
+</div>
+<div id="w202623" style="padding:16px;background:var(--bg);"><div class="panel" id="auto-daily-20260601" style="border-left:4px solid #4A80B8;margin-bottom:16px;">
+<div class="panel-title" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">
+<span style="font-size:14px;font-weight:700;">📋 06/01(월) 데일리</span>
+<span style="font-size:11px;color:var(--tx3);">광고비 ₩2,515,473 · 매출 ₩12,970,573 · 전환 109건</span>
+</div>
+<div style="overflow-x:auto;margin-bottom:12px;margin-top:10px;">
+<table style="width:100%;border-collapse:collapse;min-width:500px;">
+<thead><tr style="background:#F1F5F9;border-bottom:1.5px solid #CBD5E1;">
+<th style="padding:7px 10px;text-align:left;color:#374151;font-size:11px;font-weight:600;">매체</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">ROAS</th>
+<th style="padding:7px 10px;text-align:center;color:#374151;font-size:11px;font-weight:600;">전주</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">광고비</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">매출</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">CPA</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">CVR</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">객단가</th>
+</tr></thead>
+<tbody style="background:#FFFFFF;"><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">브랜드검색</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">6199%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩84,333</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩5,227,500</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,811</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">9.80%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩174,250</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">쇼핑검색</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;">259%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩1,110,201</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,872,660</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩31,720</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">4.74%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩82,076</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">파워링크</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;">229%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩408,718</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩935,000</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩40,872</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">3.75%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩93,500</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">ADVoost</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">840%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩110,652</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩929,120</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩15,807</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">6.36%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩132,731</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">메타</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#D97706;font-size:12px;">375%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩801,569</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩3,006,293</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩29,688</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">2.59%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩111,344</td>
+</tr></tbody>
+</table></div>
+<div style="display:flex;flex-direction:column;gap:8px;">
+<div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#166534;margin-bottom:5px;">성과</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">ROAS 163%) 대비 건수 +43%, ROAS +66%p 개선</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">건수·매출·ROAS 모두 개선. 전주 월(29건/약 234만원, ROAS 192%) 대비로도 +23%</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">밸런스가 개선되는 긍정적 신호</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전환 확보. 순수 광고 효율의 기저가 회복되는 양상</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">고효율에서 월요일 전환 급감. 일별 변동이 큰 광고세트로 효율 모니터링 예정</div>
+</div>
+<div style="background:#FFF7ED;border:1px solid #FED7AA;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#9A3412;margin-bottom:5px;">이슈</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">PC 객단가 16.2만원 / MO 객단가 17.7만원으로 PC 대비 MO 기기에서 객단가 소폭 ↑</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">4건(약 43만원), 베개 6건(약 22만원), 토퍼/패드 2건(약 8만원). 공구 효과 감소와 함께 비냉감 전환이 회복되면서 카테고리</div>
+</div>
+<div style="background:#EFF6FF;border:1px solid #BFDBFE;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#1E40AF;margin-bottom:5px;">다음 액션</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(5/31 일: 35건/약 446만원) 대비 건수 소폭 감소하나 매출 +17%. 전주</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(786회/48.6%) 대비 노출 감소는 일→월 자연 하락이며, 전주 월(609회)</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">월요일 PC 구매 패턴 지속 (5/11: 8건 → 5/18: 7건 →</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">6/1: 7건). MO 23건(약 409만원, 건당 약 18만원)</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(13,414회/255회/약 42만원) 대비 노출 +12%,</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(15건/약 163만원) 대비 감소하나, 전주 월(7건/약 68만원,</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">비냉감 전환도 전체의 50% 차지하며 밸런스 양호</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">그룹 단독 ROAS 259%로 안정적인 수익 구조 확보</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">연속 전환 키워드</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">냉감 소품 전환 지속</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(31건/약 236만원, ROAS 209%) 대비</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전체 매출의 57% (전일 19건/160만원과 유사). 건당 약 9.2만원으로 객단가</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">구스이불 5건(약 49만원, 건당 약 10만원), 이불베스트</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">목요일 일예산 원복 예정)</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">건당 약 14만원, 소진 대비</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">공구 이후 변동이 심했던 광고세트이나 6/1 안정적</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주(10건/189만원, 2,271%) 대비 급락 → 주말</div>
+</div>
+</div>
+<div style="font-size:10px;color:var(--tx3);text-align:right;margin-top:6px;">2026-06-04 10:37</div>
+</div><div class="panel" id="auto-daily-20260604" style="border-left:4px solid #4A80B8;margin-bottom:16px;">
+<div class="panel-title" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">
+<span style="font-size:14px;font-weight:700;">📋 06/04(목) 데일리</span>
+<span style="font-size:11px;color:var(--tx3);">광고비 ₩4,948,640 · 매출 ₩23,311,017 · 전환 206건</span>
+</div>
+<div style="overflow-x:auto;margin-bottom:12px;margin-top:10px;">
+<table style="width:100%;border-collapse:collapse;min-width:500px;">
+<thead><tr style="background:#F1F5F9;border-bottom:1.5px solid #CBD5E1;">
+<th style="padding:7px 10px;text-align:left;color:#374151;font-size:11px;font-weight:600;">매체</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">ROAS</th>
+<th style="padding:7px 10px;text-align:center;color:#374151;font-size:11px;font-weight:600;">전주</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">광고비</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">매출</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">CPA</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">CVR</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">객단가</th>
+</tr></thead>
+<tbody style="background:#FFFFFF;"><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">브랜드검색</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">4057%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩168,666</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩6,842,900</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩4,016</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">8.06%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩162,926</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">쇼핑검색</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;"></td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,262,207</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩5,149,420</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩35,347</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">3.98%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩80,460</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">파워링크</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#D97706;font-size:12px;">318%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩777,207</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,471,000</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩40,906</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">3.54%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩130,053</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">ADVoost</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">702%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩216,451</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩1,520,310</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩12,025</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">7.20%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩84,462</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">메타</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">514%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩1,425,759</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩7,327,387</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩22,631</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">2.68%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩116,308</td>
+</tr></tbody>
+</table></div>
+<div style="display:flex;flex-direction:column;gap:8px;">
+<div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#166534;margin-bottom:5px;">성과</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">PC가 더 높게 형성</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">입찰 구조가 보다 효율적일 것으로 예상</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">듀라론 냉감패드 제품이 5월에 이어 6월 구매 볼륨 &amp; ROAS 측면에서 우수 (제품가 6만원으로 커버 제품보다 효율적인</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">[이불베스트] MO 그룹 ROAS 618%로 구매 전환 5건으로 냉감 제품 대비 볼륨은 작지만 객단가가 높아 효율적인 구조</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">2일 캠페인 라이브 운영 초기 학습 단계로 CPC 다소 높게 형성되었으나 점차 안정될 것으로 예상</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">5월 중순 이후부터 최다 구매/최고 매출액 형성 제품군 = 냉감</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">8.6만원(전체의 6%)으로 저비용 고효율 구조</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">[신규_냉감_낭섬(25~54세)] 광고세트 소재 교체 후 효율 회복 추세</div>
+</div>
+<div style="background:#FFF7ED;border:1px solid #FED7AA;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#9A3412;margin-bottom:5px;">이슈</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주 화-수요일 대비 노출/클릭수 감소</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">6/3 휴일임에도 매출액 감소 없이 구매 전환 &amp; 매출액 활발했던 모습 (본래 주말간 ADVoost 캠페인 전환 감소하는</div>
+</div>
+<div style="background:#EFF6FF;border:1px solid #BFDBFE;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#1E40AF;margin-bottom:5px;">다음 액션</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">객단가와 구매 전환 볼륨 모두 PC 기기에서</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">'냉감'포함된 키워드 중심의</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">캠페인 '전환수 최대화' 입찰전략으로 학습 중이며, 안정화 확인되면 일예산 증액 예정 (현 PC/MO 각 2만원 셋팅)</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">공구 이후 순수 광고 효율 최고, 6월 핵심 광고세트로 확립. 소진 약</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">건당 약 6만원으로 객단가 낮으나, 볼륨 확보형 광고세트로 역할 명확. 소진 약</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전체 전환의 63%, 매출의 52%를</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">냉감(433%) 대비 비냉감이 객단가가 높아 수치상으로 효율적</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">1차적으로 광고세트별 예산 조정 해놓은 상태로, 차주 월요일 추가 조정 예정</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">현 일예산 고정 4만원 / CPA 1만원 수준으로 일예산 6~7만원으로 증액해보셔도 좋을 것 같습니다.</div>
+</div>
+</div>
+<div style="font-size:10px;color:var(--tx3);text-align:right;margin-top:6px;">2026-06-09 15:56</div>
+</div><div class="panel" id="auto-daily-20260605" style="border-left:4px solid #4A80B8;margin-bottom:16px;">
+<div class="panel-title" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">
+<span style="font-size:14px;font-weight:700;">📋 06/05(금) 데일리</span>
+<span style="font-size:11px;color:var(--tx3);">광고비 ₩2,489,164 · 매출 ₩13,073,749 · 전환 108건</span>
+</div>
+<div style="overflow-x:auto;margin-bottom:12px;margin-top:10px;">
+<table style="width:100%;border-collapse:collapse;min-width:500px;">
+<thead><tr style="background:#F1F5F9;border-bottom:1.5px solid #CBD5E1;">
+<th style="padding:7px 10px;text-align:left;color:#374151;font-size:11px;font-weight:600;">매체</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">ROAS</th>
+<th style="padding:7px 10px;text-align:center;color:#374151;font-size:11px;font-weight:600;">전주</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">광고비</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">매출</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">CPA</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">CVR</th>
+<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">객단가</th>
+</tr></thead>
+<tbody style="background:#FFFFFF;"><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">브랜드검색</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">5353%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩84,333</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩4,514,100</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,908</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">10.86%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩155,659</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">쇼핑검색</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;">178%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩1,190,156</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,122,870</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩42,506</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">3.44%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩75,817</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">파워링크</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#D97706;font-size:12px;">333%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩428,645</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩1,428,000</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩42,865</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">3.92%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩142,800</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">ADVoost</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#D97706;font-size:12px;">326%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩112,310</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩366,360</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩22,462</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">4.95%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩73,272</td>
+</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
+<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">메타</td>
+<td style="padding:8px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">739%</td>
+<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩628,337</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩4,642,419</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩17,454</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">3.14%</td>
+<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩128,956</td>
+</tr></tbody>
+</table></div>
+<div style="display:flex;flex-direction:column;gap:8px;">
+<div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#166534;margin-bottom:5px;">성과</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">목(5건/약 72만원, 122%) 대비 구매 2배, ROAS +211%p 대폭 개선</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">8,076회(역대 최고급) / 비용 약 23만원</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">409%) 대비 매출 +65%, ROAS +382%p 대폭 상승 / 전주 목(23건/약 347만원, 634%) 대비로도 +34%</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">[신규_냉감_남성] 8건 / ROAS 1,153%로 소재 교체 이후 ROAS 효율 상승하며 6월 들어 가장 높은 효율</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">신규_냉감 남성 광고세트에 소재 추가하며 성과 개선 추세</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일 ROAS 1000% 이상 형성 광고세트</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">신규_냉감_남성(25~54세) 8건 약 111만원 약 9.6만원 1153%</div>
+</div>
+<div style="background:#FFF7ED;border:1px solid #FED7AA;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#9A3412;margin-bottom:5px;">이슈</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">데이터 없음</div>
+</div>
+<div style="background:#EFF6FF;border:1px solid #BFDBFE;border-radius:8px;padding:10px 12px;">
+<div style="font-size:11px;font-weight:700;color:#1E40AF;margin-bottom:5px;">다음 액션</div>
+<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(6/3: 24건/약 354만원) 대비 구매 +21%, 매출 +27%. 전주 목(5/28:</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">PC 고단가 전환 패턴</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">5월에 추가한 브랜드 키워드</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주 목(18,249회/325회/약 59만원) 대비 노출</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(11건/약 158만원, 414%) 대비 소폭 감소했으나 전주</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">이불그룹 최고 효율 500%</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">입찰가 소폭 감액 운영 상태에서 3건 전환(ROAS 515%) 기록하여 현행 유지 예정</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">비냉감 11건(44%)으로 밸런스 유지</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">PC 전환이 안정적으로 높은 비중 유지</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">초반 유입을 높이기 위한 비용 상향보다 현 일예산에서 학습</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">안정화가 우선으로 판단되어 주말까지 예산 유지 의견</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">냉감 중심의 사이트링크(서브링크 개념) 구성하여 냉감 사용자 유입 우선 목표로 진행</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(31건/약 281만원,</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">소진 약 5.2만원으로 낮춘 저비용에 전환 5건 + 10만원 이상의 객단가 형성</div>
+</div>
+</div>
+<div style="font-size:10px;color:var(--tx3);text-align:right;margin-top:6px;">2026-06-09 15:56</div>
+</div></div>
+</div></div>
+</div><div style="border:2px solid var(--n800);border-radius:14px;margin-bottom:16px;overflow:hidden;">
 <div onclick="toggleWeek('m5')" style="background:linear-gradient(135deg,var(--n950) 0%,var(--n900) 100%);padding:18px 24px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;">
 <div style="display:flex;align-items:center;gap:14px;">
 <span id="m5-icon" style="color:#7DD3FC;font-size:14px;">▼</span>
@@ -724,103 +1158,7 @@ main{padding:28px 52px 80px;max-width:1380px;}
 </div>
 </div>
 </div>
-<div id="m5" style="padding:16px;background:#F0F4F8;"><div class="panel" id="auto-monthly-5" style="border-left:4px solid #22C55E;margin-bottom:16px;">
-<div class="panel-title" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">
-<span>📅 2026년 5월 월간 결산</span>
-<span style="font-size:11px;color:var(--tx3);">광고비 ₩56,249,716 · 매출 ₩330,818,366 · ROAS 588% · 전환 2486건</span>
-</div>
-<div style="display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-bottom:14px;">
-<div style="overflow-x:auto;">
-<table style="width:100%;border-collapse:collapse;">
-<thead><tr style="background:#F1F5F9;border-bottom:1.5px solid #CBD5E1;">
-<th style="padding:7px 10px;text-align:left;font-size:11px;font-weight:600;color:#374151;">채널</th>
-<th style="padding:7px 10px;text-align:right;font-size:11px;font-weight:600;color:#374151;">ROAS</th>
-<th style="padding:7px 10px;text-align:right;font-size:11px;font-weight:600;color:#374151;">광고비</th>
-<th style="padding:7px 10px;text-align:right;font-size:11px;font-weight:600;color:#374151;">매출</th>
-<th style="padding:7px 10px;text-align:right;font-size:11px;font-weight:600;color:#374151;">전환</th>
-<th style="padding:7px 10px;text-align:right;font-size:11px;font-weight:600;color:#374151;">CPA</th>
-</tr></thead>
-<tbody style="background:#fff;"><tr style="border-bottom:0.5px solid #E2E8F0;">
-<td style="padding:7px 10px;font-weight:600;color:#1E3A5F;font-size:12px;">브랜드검색</td>
-<td style="padding:7px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">4332%</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,614,333</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩113,245,761</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">664건</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩3,937</td>
-</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
-<td style="padding:7px 10px;font-weight:600;color:#1E3A5F;font-size:12px;">쇼핑검색(스토어)</td>
-<td style="padding:7px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;">280%</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩19,133,895</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩53,587,490</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">648건</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩29,528</td>
-</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
-<td style="padding:7px 10px;font-weight:600;color:#1E3A5F;font-size:12px;">쇼핑검색(자사몰)</td>
-<td style="padding:7px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;">162%</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩3,139,643</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩5,099,800</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">51건</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩61,562</td>
-</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
-<td style="padding:7px 10px;font-weight:600;color:#1E3A5F;font-size:12px;">파워링크</td>
-<td style="padding:7px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;">240%</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩9,178,926</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩22,014,400</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">153건</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩59,993</td>
-</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
-<td style="padding:7px 10px;font-weight:600;color:#1E3A5F;font-size:12px;">ADVoost</td>
-<td style="padding:7px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">734%</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩3,272,439</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩24,026,790</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">230건</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩14,228</td>
-</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
-<td style="padding:7px 10px;font-weight:600;color:#1E3A5F;font-size:12px;">메타</td>
-<td style="padding:7px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">597%</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩18,910,480</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩112,844,125</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">740건</td>
-<td style="padding:7px 10px;text-align:right;font-size:11px;color:#1F2937;">₩25,555</td>
-</tr></tbody>
-</table></div>
-<div style="background:#F8FAFC;border:1px solid #E2E8F0;border-radius:8px;padding:12px 14px;">
-<div style="font-size:11px;font-weight:700;color:#1E3A5F;margin-bottom:10px;">주차별 ROAS 추이</div>
-<div style="margin-bottom:8px;">
-<div style="display:flex;justify-content:space-between;font-size:10px;color:#374151;margin-bottom:3px;">
-<span>1주차 (5/1~5/3)</span><span style="font-weight:700;color:#3B82F6;">596%</span>
-</div>
-<div style="background:#E5E7EB;border-radius:4px;height:8px;">
-<div style="background:#3B82F6;width:60%;height:8px;border-radius:4px;"></div>
-</div></div><div style="margin-bottom:8px;">
-<div style="display:flex;justify-content:space-between;font-size:10px;color:#374151;margin-bottom:3px;">
-<span>2주차 (5/4~5/10)</span><span style="font-weight:700;color:#16A34A;">979%</span>
-</div>
-<div style="background:#E5E7EB;border-radius:4px;height:8px;">
-<div style="background:#16A34A;width:100%;height:8px;border-radius:4px;"></div>
-</div></div><div style="margin-bottom:8px;">
-<div style="display:flex;justify-content:space-between;font-size:10px;color:#374151;margin-bottom:3px;">
-<span>3주차 (5/11~5/17)</span><span style="font-weight:700;color:#3B82F6;">599%</span>
-</div>
-<div style="background:#E5E7EB;border-radius:4px;height:8px;">
-<div style="background:#3B82F6;width:61%;height:8px;border-radius:4px;"></div>
-</div></div><div style="margin-bottom:8px;">
-<div style="display:flex;justify-content:space-between;font-size:10px;color:#374151;margin-bottom:3px;">
-<span>4주차 (5/18~5/24)</span><span style="font-weight:700;color:#3B82F6;">563%</span>
-</div>
-<div style="background:#E5E7EB;border-radius:4px;height:8px;">
-<div style="background:#3B82F6;width:57%;height:8px;border-radius:4px;"></div>
-</div></div><div style="margin-bottom:8px;">
-<div style="display:flex;justify-content:space-between;font-size:10px;color:#374151;margin-bottom:3px;">
-<span>5주차 (5/25~5/31)</span><span style="font-weight:700;color:#F59E0B;">465%</span>
-</div>
-<div style="background:#E5E7EB;border-radius:4px;height:8px;">
-<div style="background:#F59E0B;width:47%;height:8px;border-radius:4px;"></div>
-</div></div>
-</div>
-</div>
-<div style="font-size:10px;color:var(--tx3);text-align:right;">구글 시트 확정치 기준 · 업데이트: 2026-06-04</div>
-</div><div style="border:1px solid var(--bd);border-radius:12px;margin-bottom:12px;overflow:hidden;">
+<div id="m5" style="padding:16px;background:#F0F4F8;"><div style="border:1px solid var(--bd);border-radius:12px;margin-bottom:12px;overflow:hidden;">
 <div onclick="toggleWeek('w202622')" style="background:var(--n900);padding:16px 20px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;">
 <div style="display:flex;align-items:center;gap:12px;">
 <span id="w202622-icon" style="color:var(--n200);font-size:12px;">▼</span>
@@ -3304,116 +3642,7 @@ main{padding:28px 52px 80px;max-width:1380px;}
 </div></div>
 </div>
 </div><!-- /월별 주차 내용 -->
-<div style="border:2px solid var(--n800);border-radius:14px;margin-bottom:16px;overflow:hidden;">
-<div onclick="toggleWeek('m6')" style="background:linear-gradient(135deg,var(--n950) 0%,var(--n900) 100%);padding:18px 24px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;">
-<div style="display:flex;align-items:center;gap:14px;">
-<span id="m6-icon" style="color:#7DD3FC;font-size:14px;">▼</span>
-<div>
-<div style="font-size:16px;font-weight:800;color:#F0F6FF;">2026년 6월</div>
-<div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--n200);margin-top:2px;">6/1 ~ 6/31</div>
-</div>
-</div>
-<div style="display:flex;gap:6px;">
-<span class="badge bg" id="m6-roas">ROAS -</span>
-<span class="badge bb" id="m6-cost">광고비 -</span>
-<span class="badge bg" id="m6-conv">전환 -</span>
-</div>
-</div>
-<div id="m6" style="background:var(--n900);padding:14px;"><div style="border:1px solid var(--bd);border-radius:12px;margin-bottom:12px;overflow:hidden;">
-<div onclick="toggleWeek('w202623')" style="background:var(--n900);padding:16px 20px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;">
-<div style="display:flex;align-items:center;gap:12px;">
-<span id="w202623-icon" style="color:var(--n200);font-size:12px;">▼</span>
-<span style="font-size:14px;font-weight:800;color:#F0F6FF;">06/01(월)~06/07(일)</span>
-</div>
-<div style="display:flex;gap:8px;">
-<span class="badge bg" id="w202623-roas">ROAS 515%</span>
-<span class="badge bb" id="w202623-cost">광고비 251만</span>
-<span class="badge bg" id="w202623-conv">전환 109건</span>
-</div>
-</div>
-<div id="w202623" style="padding:16px;background:var(--bg);"><div class="panel" id="auto-daily-20260601" style="border-left:4px solid #4A80B8;margin-bottom:16px;">
-<div class="panel-title" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">
-<span style="font-size:14px;font-weight:700;">📋 06/01(월) 데일리</span>
-<span style="font-size:11px;color:var(--tx3);">광고비 ₩2,515,473 · 매출 ₩12,970,573 · 전환 109건</span>
-</div>
-<div style="overflow-x:auto;margin-bottom:12px;margin-top:10px;">
-<table style="width:100%;border-collapse:collapse;min-width:500px;">
-<thead><tr style="background:#F1F5F9;border-bottom:1.5px solid #CBD5E1;">
-<th style="padding:7px 10px;text-align:left;color:#374151;font-size:11px;font-weight:600;">매체</th>
-<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">ROAS</th>
-<th style="padding:7px 10px;text-align:center;color:#374151;font-size:11px;font-weight:600;">전주</th>
-<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">광고비</th>
-<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">매출</th>
-<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">CPA</th>
-<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">CVR</th>
-<th style="padding:7px 10px;text-align:right;color:#374151;font-size:11px;font-weight:600;">객단가</th>
-</tr></thead>
-<tbody style="background:#FFFFFF;"><tr style="border-bottom:0.5px solid #E2E8F0;">
-<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">브랜드검색</td>
-<td style="padding:8px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">6199%</td>
-<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩84,333</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩5,227,500</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,811</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">9.80%</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩174,250</td>
-</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
-<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">쇼핑검색</td>
-<td style="padding:8px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;">259%</td>
-<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩1,110,201</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩2,872,660</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩31,720</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">4.74%</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩82,076</td>
-</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
-<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">파워링크</td>
-<td style="padding:8px 10px;text-align:right;font-weight:700;color:#DC2626;font-size:12px;">229%</td>
-<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩408,718</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩935,000</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩40,872</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">3.75%</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩93,500</td>
-</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
-<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">ADVoost</td>
-<td style="padding:8px 10px;text-align:right;font-weight:700;color:#16A34A;font-size:12px;">840%</td>
-<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩110,652</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩929,120</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩15,807</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">6.36%</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩132,731</td>
-</tr><tr style="border-bottom:0.5px solid #E2E8F0;">
-<td style="padding:8px 10px;font-weight:500;color:#1E3A5F;font-size:12px;">메타</td>
-<td style="padding:8px 10px;text-align:right;font-weight:700;color:#D97706;font-size:12px;">375%</td>
-<td style="padding:8px 10px;text-align:center;color:#9CA3AF;font-size:13px;">-</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩801,569</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩3,006,293</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#1F2937;">₩29,688</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">2.59%</td>
-<td style="padding:8px 10px;text-align:right;font-size:11px;color:#6B7280;">₩111,344</td>
-</tr></tbody>
-</table></div>
-<div style="display:flex;flex-direction:column;gap:8px;">
-<div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:10px 12px;">
-<div style="font-size:11px;font-weight:700;color:#166534;margin-bottom:5px;">성과</div>
-<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">ROAS 163%) 대비 건수 +43%, ROAS +66%p 개선</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">건수·매출·ROAS 모두 개선. 전주 월(29건/약 234만원, ROAS 192%) 대비로도 +23%</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">밸런스가 개선되는 긍정적 신호</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전환 확보. 순수 광고 효율의 기저가 회복되는 양상</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">고효율에서 월요일 전환 급감. 일별 변동이 큰 광고세트로 효율 모니터링 예정</div>
-</div>
-<div style="background:#FFF7ED;border:1px solid #FED7AA;border-radius:8px;padding:10px 12px;">
-<div style="font-size:11px;font-weight:700;color:#9A3412;margin-bottom:5px;">이슈</div>
-<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">PC 객단가 16.2만원 / MO 객단가 17.7만원으로 PC 대비 MO 기기에서 객단가 소폭 ↑</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">4건(약 43만원), 베개 6건(약 22만원), 토퍼/패드 2건(약 8만원). 공구 효과 감소와 함께 비냉감 전환이 회복되면서 카테고리</div>
-</div>
-<div style="background:#EFF6FF;border:1px solid #BFDBFE;border-radius:8px;padding:10px 12px;">
-<div style="font-size:11px;font-weight:700;color:#1E40AF;margin-bottom:5px;">다음 액션</div>
-<div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(5/31 일: 35건/약 446만원) 대비 건수 소폭 감소하나 매출 +17%. 전주</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(786회/48.6%) 대비 노출 감소는 일→월 자연 하락이며, 전주 월(609회)</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">월요일 PC 구매 패턴 지속 (5/11: 8건 → 5/18: 7건 →</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">6/1: 7건). MO 23건(약 409만원, 건당 약 18만원)</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(13,414회/255회/약 42만원) 대비 노출 +12%,</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(15건/약 163만원) 대비 감소하나, 전주 월(7건/약 68만원,</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">비냉감 전환도 전체의 50% 차지하며 밸런스 양호</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">그룹 단독 ROAS 259%로 안정적인 수익 구조 확보</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">연속 전환 키워드</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">냉감 소품 전환 지속</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전일(31건/약 236만원, ROAS 209%) 대비</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전체 매출의 57% (전일 19건/160만원과 유사). 건당 약 9.2만원으로 객단가</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">구스이불 5건(약 49만원, 건당 약 10만원), 이불베스트</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">목요일 일예산 원복 예정)</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">건당 약 14만원, 소진 대비</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">공구 이후 변동이 심했던 광고세트이나 6/1 안정적</div><div style="font-size:11px;color:#374151;padding:3px 0;line-height:1.5;">전주(10건/189만원, 2,271%) 대비 급락 → 주말</div>
-</div>
-</div>
-<div style="font-size:10px;color:var(--tx3);text-align:right;margin-top:6px;">2026-06-04 10:37</div>
-</div></div>
-</div></div>
-</div></div><!-- /4월 월별 아코디언 -->
-</section>
+</div></section>
 </main>
 <script>
 let editMode = false;
